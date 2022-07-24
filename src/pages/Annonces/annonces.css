@@ -1,0 +1,80 @@
+.annonces{
+}
+
+.annonces .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+.annonces .annonces-wrapper{
+    display: flex;
+}
+.annonces .annonces-wrapper .left-side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.annonces .annonces-wrapper .left-side .left-side-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.annonces .annonces-wrapper .left-side .left-side-wrapper .advanced-search{
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.annonces .annonces-wrapper .left-side .left-side-wrapper .search-filters{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.annonces .annonces-wrapper .left-side .left-side-wrapper .search-filters select{
+    padding: 10px;
+    border: .5px solid #e2e2e2;
+}
+
+
+.annonces .annonces-wrapper .left-side .left-side-wrapper .search-filters select:focus{
+    outline: none;
+}
+
+.annonces .annonces-wrapper .left-side .left-side-wrapper .search-submit{
+    margin-top: 40px;
+    background: #57bf27;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.annonces .annonces-wrapper .right-side{
+    flex: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .annonces .title{
+        font-size: 20px;
+    }
+    .annonces .annonces-wrapper{
+        flex-direction: column;
+    }
+}

@@ -99,7 +99,12 @@ const Navbar = () => {
                         <div className="home" onClick={() => navigate("/")}>
                             Acceuil
                         </div>
-                        <div className="ad">Annonces</div>
+                        <div
+                            onClick={() => navigate("/annonces")}
+                            className="ad"
+                        >
+                            Annonces
+                        </div>
                         <div
                             className="contact"
                             onClick={() => navigate("/contact")}

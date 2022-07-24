@@ -44,7 +44,10 @@ const Header = () => {
                         <option value="ville-2">ville-2</option>
                         <option value="ville-3">ville-3</option>
                     </select>
-                    <div className="search-button search-button-border">
+                    <div
+                        onClick={() => navigate("/annonces")}
+                        className="search-button search-button-border"
+                    >
                         Rechercher
                     </div>
                 </div>
