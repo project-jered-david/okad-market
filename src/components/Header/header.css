@@ -1,0 +1,134 @@
+.header{
+    background: #57bf27;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.header .subtitle{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px; 
+}
+
+.header .bottom .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .bottom .buttons .rent-button,
+.header .bottom .buttons .buy-button {
+    background:#e2e2e2;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+.header .bottom .buttons .rent-button:hover,
+.header .bottom .buttons .buy-button:hover {
+    color: #fff;
+}
+
+.header .bottom .search-filter-container{
+    display: flex;
+    width: 80%;
+}
+
+.header .bottom .search-filter-container .input{
+    flex: 2 !important;
+}
+
+.header .bottom .search-filter-container .search-item{
+    flex: 1;
+    padding: 10px;
+    border: .5px solid #e2e2e2;
+}
+
+.header .bottom .search-filter-container .border{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header .bottom .search-filter-container .search-item:focus{
+    outline: none;
+    
+}
+
+.header .bottom .search-filter-container .search-button{
+    flex: 1;
+    padding: 20px;
+    background: #e2e2e2;
+    border: .5px solid #e2e2e2;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.header .bottom .search-filter-container .search-button-border{
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.header .bottom .search-filter-container .search-button:hover{
+    color: #fff;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .header{
+        height: 92vh;
+    }
+    .header .title {
+        font-size: 22px;
+        text-align: center;
+    }
+    .header .subtitle{
+        font-size: 14px;
+        text-align: center;
+    }
+    .header .bottom .search-filter-container{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .header .bottom .buttons .rent-button,
+    .header .bottom .buttons .buy-button {
+        font-size: 17px;
+    }
+    .header .bottom .search-filter-container .border{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .header .bottom .search-filter-container .search-button-border{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .header .bottom .search-filter-container .search-button{
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 17px;
+    }
+    
+}

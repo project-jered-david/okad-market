@@ -1,0 +1,160 @@
+.contact{
+}
+
+.contact .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+
+.contact .contact-wrapper{
+    display: flex;
+    height: 600px;
+}
+
+.contact .contact-wrapper .contact-form,
+.contact .contact-wrapper .contact-info{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-wrapper .contact-form .contact-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+
+.contact .contact-wrapper .contact-form .contact-form-wrapper .client-info,
+.contact .contact-wrapper .contact-form .contact-form-wrapper .client-email{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .contact-wrapper .contact-form .contact-form-wrapper .client-message{
+    display: flex;
+    align-items: center;
+    flex: 4;
+}
+
+#client-lastname,
+#client-firstname{
+    flex:1;
+    height: 40%;
+    border: .5px solid #e2e2e2;
+    padding: 10px;
+}
+#email{
+    width: 100%;
+    height: 40%;
+    border: .5px solid #e2e2e2;
+    padding: 10px;
+}
+
+#client-lastname:focus,
+#client-firstname:focus{
+    outline:none;
+}
+
+#email:focus{
+    outline:none;
+}
+textarea {
+    width: 100%;
+    height: 80%;
+    border: .5px solid #e2e2e2;
+    padding: 10px;
+}
+
+textarea:focus{
+    outline:none; 
+}
+
+.contact .contact-wrapper .contact-info .contact-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+
+.contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-title{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-subtitle{
+    color: gray;
+    font-size: 17px;
+}
+
+.contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-title,
+.contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-subtitle{
+    flex:2;
+    width: 80%;
+    height: 80%;
+}
+
+.contact .contact-wrapper .contact-info .contact-info-wrapper .address{
+    flex:1;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    gap: 10px;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .contact .title{
+        font-size: 20px;
+    }
+    #client-lastname,
+    #client-firstname{
+        width: 94%;
+    }
+    .contact .contact-wrapper{
+        height: 800px;
+    }
+
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-info,
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-email{
+       flex:2;
+    }
+
+    
+    .contact .contact-wrapper,
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-info{
+        flex-direction: column;
+    }
+
+    .contact .contact-wrapper .contact-form .contact-form-wrapper{
+        width: 90%;
+    }
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-info{
+        width: 100%;
+    }
+    .contact .contact-wrapper .contact-info .contact-info-wrapper{
+        width: 90%; 
+    }
+
+    .contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-title{
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-subtitle{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .contact .contact-wrapper .contact-info .contact-info-wrapper .address{
+        font-size: 14px; 
+    }
+}

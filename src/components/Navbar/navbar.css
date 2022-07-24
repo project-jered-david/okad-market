@@ -1,0 +1,114 @@
+.navbar-wrapper{
+    position: relative;
+}
+.navbar-wrapper .top,
+.navbar-wrapper .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3vh;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: .5px solid #e2e2e2;
+}
+.navbar-wrapper .bottom{
+    height: 7vh;
+}
+
+.navbar-wrapper .bottom-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+.navbar-wrapper .top-fixed {
+    display:none;
+}
+.navbar-wrapper .top .left,
+.navbar-wrapper .top .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-wrapper .top .left .telephone,
+.navbar-wrapper .top .left .email,
+.navbar-wrapper .top .left .open-hours,
+.navbar-wrapper .top .right .sign-in,
+.navbar-wrapper .top .right .register{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.navbar-wrapper .top .right .sign-in,
+.navbar-wrapper .top .left .email,
+.navbar-wrapper .top .right .register{
+    cursor: pointer;
+}
+.navbar-wrapper .bottom .logo,
+.navbar-wrapper .bottom .submit-new-ad{
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar-wrapper .bottom .navbar-buttons{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.navbar-wrapper .bottom .navbar-buttons .home,
+.navbar-wrapper .bottom .navbar-buttons .ad,
+.navbar-wrapper .bottom .navbar-buttons .contact,
+.navbar-wrapper .bottom .navbar-buttons .about-us{
+    cursor: pointer;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-wrapper .bottom .navbar-buttons .home:hover,
+.navbar-wrapper .bottom .navbar-buttons .ad:hover,
+.navbar-wrapper .bottom .navbar-buttons .contact:hover,
+.navbar-wrapper .bottom .navbar-buttons .about-us:hover{
+   border-left: .5px solid #57bf27;
+}
+
+.navbar-wrapper .bottom .submit-new-ad {
+    width: fit-content;
+    border: .5px solid #e2e2e2;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+}
+.navbar-wrapper .bottom .submit-new-ad:hover{
+    background: #57bf27;
+    color: #fff;
+}
+
+.toggle-menu{
+    display: none;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px) {
+
+    .navbar-wrapper .bottom{
+        padding: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .navbar-wrapper .bottom .logo,
+    .navbar-wrapper .bottom .submit-new-ad{
+        font-size: 10px;
+    }
+    .navbar-wrapper .top,
+    .navbar-wrapper .bottom .navbar-buttons{
+        display: none;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+}
