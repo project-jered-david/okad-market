@@ -1,9 +1,17 @@
 import { useState, useRef } from "react";
 import JoditEditor from "jodit-react";
 import "./add-new-ad.css";
+import CustomDropDown from "../../components/CustomDropDown";
+const propertyStatus = ["Excellent", "Bon", "Moyen", "Usagé"];
+const propertyType = ["Maison", "Boutique", "Magasin", "Appartement", "Hôtel"];
+const propertyCity = ["Ville-1", "Ville-2", "Ville-3"];
+/* const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; */
 
 const AddNewAd = () => {
     const [nombreFichierChoisi, setNombreFichierChoisi] = useState(0);
+    const [etatPropriete, setEtatPropriete] = useState(propertyStatus[0]);
+    const [typePropriete, setTypePropriete] = useState(propertyType[0]);
+    const [villePropriete, setVillePropriete] = useState(propertyCity[0]);
     const [description, setDescription] = useState("");
     const editor = useRef(null);
     const config = {
@@ -17,6 +25,7 @@ const AddNewAd = () => {
     const onSubmitNewAd = (e) => {
         e.preventDefault();
     };
+    console.log(etatPropriete, typePropriete, villePropriete);
     return (
         <div className="add-new-ad">
             <div className="title">Ajouter votre annonce</div>
@@ -40,11 +49,10 @@ const AddNewAd = () => {
                         </div>
                         <div className="info">
                             <div className="label-info">Type de propriété</div>
-                            <select>
-                                <option value="appartement">Appartement</option>
-                                <option value="maison">Maison</option>
-                                <option value="boutique">Boutique</option>
-                            </select>
+                            <CustomDropDown
+                                options={propertyType}
+                                setValue={setTypePropriete}
+                            />
                         </div>
                     </div>
                     <div className="basic-infos">
@@ -54,19 +62,17 @@ const AddNewAd = () => {
                         </div>
                         <div className="info">
                             <div className="label-info">Chambre(s)</div>
-                            <select>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                            </select>
+                            <input
+                                type="number"
+                                placeholder="Nombre de chambre..."
+                            />
                         </div>
                         <div className="info">
                             <div className="label-info">Salle(s) de bain</div>
-                            <select>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                            </select>
+                            <input
+                                type="number"
+                                placeholder="Nombre de salle(s) de bain..."
+                            />
                         </div>
                     </div>
                     <div className="basic-info-label">Emplacement</div>
@@ -80,11 +86,10 @@ const AddNewAd = () => {
                         </div>
                         <div className="info">
                             <div className="label-info">Ville</div>
-                            <select>
-                                <option value="ville-1">Ville-1</option>
-                                <option value="ville-2">Ville-2</option>
-                                <option value="ville-3">Ville-3</option>
-                            </select>
+                            <CustomDropDown
+                                options={propertyCity}
+                                setValue={setVillePropriete}
+                            />
                         </div>
                     </div>
                     <div className="basic-info-label">Photos</div>
@@ -121,36 +126,28 @@ const AddNewAd = () => {
                     <div className="basic-infos">
                         <div className="info">
                             <div className="label-info">
-                                Age de la propriété (année(s))
+                                Age de la propriété (en année(s))
                             </div>
-                            <select>
-                                <option value={0}>0</option>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                            </select>
+                            <input
+                                type="number"
+                                placeholder="Age de la propriété..."
+                            />
                         </div>
                         <div className="info">
                             <div className="label-info">Nombre étage</div>
-                            <select>
-                                <option value={0}>0</option>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                            </select>
+                            <input
+                                type="number"
+                                placeholder="Nombre étage..."
+                            />
                         </div>
                         <div className="info">
                             <div className="label-info">
                                 État de la propriété
                             </div>
-                            <select>
-                                <option value="neuf">excellent</option>
-                                <option value="bon">bon</option>
-                                <option value="boutique">moyen</option>
-                                <option value="boutique">usagé</option>
-                            </select>
+                            <CustomDropDown
+                                options={propertyStatus}
+                                setValue={setEtatPropriete}
+                            />
                         </div>
                     </div>
                     {/* DÉtail proprietaires */}
