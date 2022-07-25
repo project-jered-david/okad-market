@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Annonces from "./pages/Annonces";
 import AddNewAd from "./pages/AddNewAd";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/annonces" element={<Annonces />} />
                     <Route path="/ajouter-une-annonce" element={<AddNewAd />} />
+                    <Route path="/a-propos" element={<AboutUs />} />
                 </Routes>
                 <Footer />
             </div>

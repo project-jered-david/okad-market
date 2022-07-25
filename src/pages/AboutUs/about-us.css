@@ -1,0 +1,84 @@
+.about-us{
+}
+
+.about-us .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+
+.about-us .about-us-container{
+    padding: 80px;
+}
+
+.about-us .about-us-container .about-us-container-wrapper{
+    display: flex;
+    gap: 40px;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .left-content,
+.about-us .about-us-container .about-us-container-wrapper .right-content{
+    flex: 1;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .left-content img{
+    object-fit: cover ;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .right-content .our-company-title{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #57bf27;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .right-content .company-details{
+    color: gray;
+    font-size: 17px;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .right-content .statistics{
+    display: flex;
+}
+
+.about-us .about-us-container .about-us-container-wrapper .right-content .statistics .statistic{
+    flex: 1;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .about-us .title{
+        font-size: 20px;
+    }
+    .about-us .about-us-container .about-us-container-wrapper{
+        flex-direction: column;
+    }
+    .about-us .about-us-container{
+        padding: 80px 20px 40px 20px !important;
+    }
+
+    .about-us .about-us-container .about-us-container-wrapper .right-content .our-company-title{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .about-us .about-us-container .about-us-container-wrapper .right-content{
+        gap: 25px;
+    }
+
+    .about-us .about-us-container .about-us-container-wrapper .right-content .company-details{
+        font-size: 15px;
+    }
+}

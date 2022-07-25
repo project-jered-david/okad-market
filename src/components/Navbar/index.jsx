@@ -111,7 +111,12 @@ const Navbar = () => {
                         >
                             Contact
                         </div>
-                        <div className="about-us">À propos</div>
+                        <div
+                            className="about-us"
+                            onClick={() => navigate("/a-propos")}
+                        >
+                            À propos
+                        </div>
                     </div>
                     <div
                         className="submit-new-ad"
