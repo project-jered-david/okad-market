@@ -113,7 +113,12 @@ const Navbar = () => {
                         </div>
                         <div className="about-us">À propos</div>
                     </div>
-                    <div className="submit-new-ad">Déposer une annonce</div>
+                    <div
+                        className="submit-new-ad"
+                        onClick={() => navigate("/ajouter-une-annonce")}
+                    >
+                        Déposer une annonce
+                    </div>
                 </div>
             </div>
         </div>

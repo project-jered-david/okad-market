@@ -31,6 +31,14 @@ const Annonces = () => {
                                 <option value="maison">Maison</option>
                                 <option value="boutique">Boutique</option>
                             </select>
+
+                            <select name="property-price" id="">
+                                <option value="prix">prix</option>
+                                <option value="prix-asc">Prix croissant</option>
+                                <option value="prix-desc">
+                                    Prix décroissant
+                                </option>
+                            </select>
                         </div>
                         <div className="search-submit">Rechercher</div>
                     </div>

@@ -1,0 +1,100 @@
+.add-new-ad{
+}
+
+.add-new-ad .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 60px 0px 60px;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-info-label{
+   width:100%;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+
+}
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info select,
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input {
+    padding: 10px;
+    flex: 1;
+    border: .5px solid #e2e2e2;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info select:focus,
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input:focus{
+    outline:none;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input[type=file]{
+    display: none;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info .images {
+    width: 100%;
+    border: 1px dotted #000;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background:#e2e2e2;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input::-webkit-outer-spin-button,
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper input[type=submit]{
+    width: fit-content;
+    background: #57bf27;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .add-new-ad .title{
+        font-size: 20px;
+    }
+    .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-info-label{
+        font-size: 17px;
+    }
+    .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos{
+        flex-direction: column;
+    }
+    .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper{
+        margin: 40px 20px 0px 20px;
+    }
+    
+}
