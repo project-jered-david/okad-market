@@ -239,6 +239,11 @@
     .single-property .property-details .left-side .property-infos .property-title {
         font-size: 20px;
     }
+
+    .single-property .property-details .right-side .contact-us-container .our-info .form-container .item textarea,
+    .single-property .property-details .right-side .contact-us-container .our-info .form-container .item input{
+        font-size: 20px;
+    }
     
     .single-property .property-details .left-side .property-infos .property-location,
     .single-property .property-details .left-side .property-infos .property-price,
