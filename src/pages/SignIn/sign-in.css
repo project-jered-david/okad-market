@@ -1,0 +1,98 @@
+.sign-in-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.sign-in-container .sign-in-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.sign-in-container .sign-in-wrapper .title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #57bf27;
+}
+
+.sign-in-container .sign-in-wrapper .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .email-container,
+.sign-in-container .sign-in-wrapper .input-container .password-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .email-container .email-input,
+.sign-in-container .sign-in-wrapper .input-container .email-container .email-label,
+.sign-in-container .sign-in-wrapper .input-container .password-container .password-input,
+.sign-in-container .sign-in-wrapper .input-container .password-container .password-label{
+    display: flex;
+    width: 100%;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .email-container .email-label,
+.sign-in-container .sign-in-wrapper .input-container .password-container .password-label{
+    font-weight: 500;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .email-container .email-input input,
+.sign-in-container .sign-in-wrapper .input-container .password-container .password-input input{
+    flex: 1;
+    padding: 10px;
+    border: .5px solid #e2e2e2;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .email-container .email-input input:focus,
+.sign-in-container .sign-in-wrapper .input-container .password-container .password-input input:focus{
+    outline: none;
+}
+.sign-in-container .sign-in-wrapper .input-container .connect-button{
+    background-color: #57bf27;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sign-in-container .sign-in-wrapper .input-container .redirect-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px) {
+    .sign-in-container .sign-in-wrapper{
+        width: 100%;
+    }
+    .sign-in-container .sign-in-wrapper .input-container{
+        width: 100%;
+    }
+
+    .sign-in-container .sign-in-wrapper .input-container .email-container .email-input,
+    .sign-in-container .sign-in-wrapper .input-container .email-container .email-label,
+    .sign-in-container .sign-in-wrapper .input-container .password-container .password-input,
+    .sign-in-container .sign-in-wrapper .input-container .password-container .password-label{
+        width: 100%;
+    }
+
+    .sign-in-container .sign-in-wrapper .input-container .redirect-register{
+        font-size: 15px;
+    }
+}

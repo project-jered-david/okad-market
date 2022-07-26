@@ -13,6 +13,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import SignIn from "../../pages/SignIn";
+import CustomModal from "../Modal";
 
 const style = {
     position: "absolute",
@@ -31,13 +33,14 @@ const Navbar = () => {
     const navigate = useNavigate();
     const [fix, setFix] = useState(false);
     const [open, setOpen] = useState(false);
+    const [signInOn, setSignInOn] = useState(false);
     const handleOpen = () => {
         setOpen(true);
     };
     const handleClose = () => setOpen(false);
 
     const handleSignIn = () => {
-        console.log("sign in");
+        setSignInOn(true);
     };
 
     const setFixed = () => {
@@ -51,6 +54,11 @@ const Navbar = () => {
     window.addEventListener("scroll", setFixed);
     return (
         <div className="navbar">
+            {signInOn && (
+                <CustomModal open={signInOn} setOpen={setSignInOn}>
+                    <SignIn />
+                </CustomModal>
+            )}
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -144,7 +152,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="right">
-                        <div className="sign-in">
+                        <div
+                            className="sign-in"
+                            onClick={() => setSignInOn(true)}
+                        >
                             <FontAwesomeIcon
                                 icon={faArrowRightToBracket}
                                 style={styles.iconColor}
