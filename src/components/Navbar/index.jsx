@@ -207,7 +207,7 @@ const Navbar = () => {
 
                     <div className="toggle-menu">
                         <FontAwesomeIcon
-                            icon={faUser}
+                            icon={faArrowRightToBracket}
                             style={{ color: "#57bf27", fontSize: "20px" }}
                             onClick={handleSignIn}
                         />
