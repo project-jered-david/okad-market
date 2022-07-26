@@ -152,7 +152,7 @@ const Navbar = () => {
                     <div className="toggle-menu">
                         <FontAwesomeIcon
                             icon={faBars}
-                            style={styles.iconColor}
+                            style={{ color: "#57bf27", fontSize: "20px" }}
                             onClick={handleOpen}
                         />
                     </div>
