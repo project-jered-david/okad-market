@@ -96,5 +96,9 @@
     .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper{
         margin: 40px 20px 0px 20px;
     }
+
+    .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper input[type=submit]{
+        font-size: 17px;
+    }
     
 }
