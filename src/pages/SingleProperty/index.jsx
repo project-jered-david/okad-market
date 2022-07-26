@@ -28,6 +28,7 @@ const style = {
     height: "80%",
     bgcolor: "background.paper",
     boxShadow: 24,
+    outline: "none",
     p: 4,
 };
 

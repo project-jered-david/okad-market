@@ -19,10 +19,11 @@ const style = {
     top: "30%",
     left: "50%",
     transform: "translate(-50%, -30%)",
-    width: "100%",
+    width: "80%",
     height: "80%",
     bgcolor: "background.paper",
-    boxShadow: 24,
+    outline: "none",
+    boxShadow: 0,
     p: 4,
 };
 
