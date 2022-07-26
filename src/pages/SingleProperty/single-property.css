@@ -1,0 +1,243 @@
+.single-property{
+}
+
+.single-property .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+
+.single-property .carousel-container{
+    padding: 40px;
+    height: auto;
+}
+
+.single-property .carousel-container .main-carousel{
+    padding-top: 20px;
+}
+
+.carousel {
+    cursor: pointer;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 10px solid #57bf27 !important;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 10px solid #57bf27 !important;
+}
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    opacity: 1 !important;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 45% !important;
+    background: #fff !important;
+}
+
+.single-property .carousel-container .main-carousel .carousel{
+
+}
+
+.carousel{
+    text-align: center;
+    position: relative;
+}
+
+.carousel .thumb{
+    width: 10%;
+    height: 80px;
+    
+}
+
+.next-arrow,.prev-arrow{
+    position: absolute;
+    top: 50%
+}
+
+.next-arrow{
+    right: 0
+}
+
+
+.carousel .thumb img{
+    object-fit: cover ;
+    width: 100%;
+    height: 100% !important;
+}
+
+.single-property .carousel-container .carousel img{
+    width: 100%;
+    object-fit: cover ;
+    height: 550px;
+    border-radius: 3px;
+}
+
+.single-property .property-details{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.single-property .property-details .left-side{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.single-property .property-details .left-side .property-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: .5px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.single-property .property-details .left-side .property-infos .property-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.single-property .property-details .left-side .property-infos .property-location {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.single-property .property-details .left-side .property-infos .property-price{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.single-property .property-details .left-side .property-infos .property-little-feature{
+    display: flex;
+    gap: 20px;
+}
+
+.single-property .property-details .left-side .property-infos .property-little-feature .feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.single-property .property-details .right-side{
+    display: flex;
+    flex: 1;
+}
+.single-property .property-details .right-side .contact-us-container{
+    width: 100%;
+}
+.single-property .property-details .right-side .contact-us-container .our-info{
+    display: flex;
+    flex-direction: column;
+    border:.5px solid #e2e2e2;
+    border-radius: 5px;
+    gap: 40px;
+}
+.single-property .property-details .right-side .contact-us-container .our-info .info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: .5px solid #e2e2e2;
+    background: rgb(218, 247, 218);
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .info .company{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .info .phone{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .form-container{
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item{
+    display: flex;
+    width: 100%;
+}
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item input{
+    padding: 10px;
+}
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item textarea,
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item input{
+    flex: 1;
+    border: .5px solid #e2e2e2;
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item textarea:focus,
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item input:focus{
+    outline:none;
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .item textarea{
+ min-height:200px;
+ resize:vertical;
+}
+
+.single-property .property-details .right-side .contact-us-container .our-info .form-container .send-message-button{
+    background:#57bf27;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 50%;
+    text-align: center;
+}
+
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .single-property .title{
+        font-size: 20px;
+    }
+    .single-property .property-details{
+        flex-direction: column;
+    }
+
+    .single-property .property-details .left-side .property-infos .property-title {
+        font-size: 20px;
+    }
+    
+    .single-property .property-details .left-side .property-infos .property-location,
+    .single-property .property-details .left-side .property-infos .property-price,
+    .single-property .property-details .left-side .property-infos .property-little-feature .feature {
+        font-size: 15px
+    }
+
+    .single-property .property-details .left-side .property-infos .property-little-feature{
+        flex-direction: column;
+    }
+}

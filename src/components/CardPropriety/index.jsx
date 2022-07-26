@@ -7,7 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { MdGarage, MdGridOn } from "react-icons/md";
 import { FaUserAlt, FaRegCalendarAlt, FaHeart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 const CardPropriety = ({ propriety }) => {
+    const navigate = useNavigate();
     return (
         <div className="card-propriety">
             <div className="type">
@@ -21,7 +24,15 @@ const CardPropriety = ({ propriety }) => {
             </div>
             <div className="price">{propriety.price} CFA/mois</div>
             <div className="details">
-                <div className="propriety-title" style={{ cursor: "pointer" }}>
+                <div
+                    onClick={() =>
+                        navigate("/details-annonce", {
+                            state: propriety.id,
+                        })
+                    }
+                    className="propriety-title"
+                    style={{ cursor: "pointer" }}
+                >
                     {propriety.title}
                 </div>
                 <div className="propriety-location">
