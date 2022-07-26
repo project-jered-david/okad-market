@@ -15,6 +15,26 @@
     height: 7vh;
 }
 
+.close-button{
+    cursor: pointer;
+    width: fit-content;
+    margin-left: 10px;
+    font-weight: bold;
+    font-style: 25px;
+}
+
+.mobile-menu-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    font-weight: bold;
+    font-size: 25px;
+    color: #57bf27;
+}
+
 .navbar-wrapper .bottom-fixed {
     position: fixed;
     width: 100%;
