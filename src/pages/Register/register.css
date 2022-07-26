@@ -1,0 +1,111 @@
+.register-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.register-container .register-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-height: 100%;
+    gap: 5px;
+}
+
+.register-container .register-wrapper .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #57bf27;
+}
+
+.register-container .register-wrapper .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.register-container .register-wrapper .input-container .email-container,
+.register-container .register-wrapper .input-container .password-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.register-container .register-wrapper .input-container .email-container .email-input,
+.register-container .register-wrapper .input-container .email-container .email-label,
+.register-container .register-wrapper .input-container .password-container .password-input,
+.register-container .register-wrapper .input-container .password-container .password-label{
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+}
+
+.register-container .register-wrapper .input-container .email-container .email-label,
+.register-container .register-wrapper .input-container .password-container .password-label{
+    font-weight: 500;
+}
+
+.register-container .register-wrapper .input-container .email-container .email-input input,
+.register-container .register-wrapper .input-container .password-container .password-input input{
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border: .5px solid #e2e2e2;
+}
+
+.register-container .register-wrapper .input-container .email-container .email-input input:focus,
+.register-container .register-wrapper .input-container .password-container .password-input input:focus{
+    outline: none;
+}
+.register-container .register-wrapper .input-container .connect-button{
+    background-color: #57bf27;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.register-container .register-wrapper .input-container .redirect-register{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px) {
+    .register-container .register-wrapper{
+        width: 100%;
+    }
+    .register-container .register-wrapper .title{
+        font-size: 30px;
+    }
+    .register-container .register-wrapper .input-container{
+        width: 100%;
+    }
+
+    .register-container .register-wrapper .input-container .email-container .email-input,
+    .register-container .register-wrapper .input-container .email-container .email-label,
+    .register-container .register-wrapper .input-container .password-container .password-input,
+    .register-container .register-wrapper .input-container .password-container .password-label{
+        width: 100%;
+        font-size: 15px;
+    }
+    .register-container .register-wrapper .input-container .email-container .email-input input,
+    .register-container .register-wrapper .input-container .password-container .password-input input{
+        font-size: 16px;
+    }
+
+    .register-container .register-wrapper .input-container .redirect-register{
+        font-size: 13px;
+    }
+}

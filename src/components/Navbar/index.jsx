@@ -15,6 +15,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import SignIn from "../../pages/SignIn";
 import CustomModal from "../Modal";
+import Register from "../../pages/Register";
 
 const style = {
     position: "absolute",
@@ -34,13 +35,20 @@ const Navbar = () => {
     const [fix, setFix] = useState(false);
     const [open, setOpen] = useState(false);
     const [signInOn, setSignInOn] = useState(false);
+    const [registerOn, setRegisterOn] = useState(false);
+
     const handleOpen = () => {
         setOpen(true);
     };
-    const handleClose = () => setOpen(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     const handleSignIn = () => {
         setSignInOn(true);
+    };
+    const handleSignUp = () => {
+        setRegisterOn(true);
     };
 
     const setFixed = () => {
@@ -56,7 +64,15 @@ const Navbar = () => {
         <div className="navbar">
             {signInOn && (
                 <CustomModal open={signInOn} setOpen={setSignInOn}>
-                    <SignIn />
+                    <SignIn setSignIn={setSignInOn} SetSignUp={setRegisterOn} />
+                </CustomModal>
+            )}
+            {registerOn && (
+                <CustomModal open={registerOn} setOpen={setRegisterOn}>
+                    <Register
+                        setSignIn={setSignInOn}
+                        SetSignUp={setRegisterOn}
+                    />
                 </CustomModal>
             )}
             <Modal
@@ -162,7 +178,7 @@ const Navbar = () => {
                             />
                             Se connecter
                         </div>
-                        <div className="register">
+                        <div className="register" onClick={handleSignUp}>
                             <FontAwesomeIcon
                                 icon={faUser}
                                 style={styles.iconColor}

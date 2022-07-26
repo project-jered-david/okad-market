@@ -1,6 +1,6 @@
 import "./sign-in.css";
 
-const SignIn = () => {
+const SignIn = ({ setSignIn, SetSignUp }) => {
     return (
         <div className="sign-in-container">
             <div className="sign-in-wrapper">
@@ -33,6 +33,10 @@ const SignIn = () => {
                                 color: "#57bf27",
                                 cursor: "pointer",
                                 fontWeight: "bold",
+                            }}
+                            onClick={() => {
+                                setSignIn(false);
+                                SetSignUp(true);
                             }}
                         >
                             S'inscrire
