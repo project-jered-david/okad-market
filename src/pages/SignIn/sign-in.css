@@ -93,7 +93,7 @@
     }
     .sign-in-container .sign-in-wrapper .input-container .email-container .email-input input,
     .sign-in-container .sign-in-wrapper .input-container .password-container .password-input input{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sign-in-container .sign-in-wrapper .input-container .redirect-register{
