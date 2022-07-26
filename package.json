@@ -38,7 +38,10 @@
       "react-app/jest"
     ]
   },
-  "heroku-postbuild": "npm --legacy-peer-deps",
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
