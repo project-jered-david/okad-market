@@ -69,7 +69,8 @@
 .card-propriety .details .propriety-title{
     width: fit-content;
     transition: all .5s ease-in-out;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 17px;
     font-weight: 600;
 }

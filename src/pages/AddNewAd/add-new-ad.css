@@ -100,5 +100,9 @@
     .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper input[type=submit]{
         font-size: 17px;
     }
+    .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input {
+        font-size: 18px;
+    }
+        
     
 }
