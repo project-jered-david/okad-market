@@ -101,6 +101,16 @@
     border-radius: 50px;
     transition: all .5s ease-in-out;
 }
+
+.submit-new-ad-mobile{
+    width: fit-content;
+    border: .5px solid #e2e2e2;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #fff;
+    background: #57bf27;
+}
 .navbar-wrapper .bottom .submit-new-ad:hover{
     background: #57bf27;
     color: #fff;
@@ -129,5 +139,8 @@
     }
     .toggle-menu{
         display: flex;
+    }
+    .navbar-wrapper .bottom .submit-new-ad{
+        display: none;
     }
 }

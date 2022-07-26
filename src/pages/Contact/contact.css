@@ -84,6 +84,7 @@ textarea:focus{
     height: 80%;
 }
 
+
 .contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-title{
     padding-top: 20px;
     font-weight: bold;
@@ -119,14 +120,33 @@ textarea:focus{
     #client-lastname,
     #client-firstname{
         width: 94%;
-    }
-    .contact .contact-wrapper{
-        height: 800px;
+        font-size: 18px;
     }
 
-    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-info,
-    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-email{
+    #email{
+        font-size: 18px;
+    }
+    .contact .contact-wrapper{
+        height:120vh;
+    }
+
+    .contact .contact-wrapper .contact-form{
+        flex:2;
+    }
+
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-message{
+        font-size: 18px;
+        height: auto;
+        flex: 5 !important;
+        resize: vertical;
+    }
+
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-info{
        flex:2;
+    }
+
+    .contact .contact-wrapper .contact-form .contact-form-wrapper .client-email{
+        flex:2 !important;
     }
 
     
@@ -143,10 +163,13 @@ textarea:focus{
     }
     .contact .contact-wrapper .contact-info .contact-info-wrapper{
         width: 90%; 
+        gap: 10px;
     }
 
     .contact .contact-wrapper .contact-info .contact-info-wrapper .get-in-touch-title{
         padding-top: 0px;
+        padding-bottom: 20px;
+        width: 100%;
         text-align: center;
     }
 
@@ -155,6 +178,6 @@ textarea:focus{
         margin-bottom: 10px;
     }
     .contact .contact-wrapper .contact-info .contact-info-wrapper .address{
-        font-size: 14px; 
+        font-size: 15px; 
     }
 }

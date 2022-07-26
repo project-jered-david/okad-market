@@ -36,6 +36,10 @@ const Navbar = () => {
     };
     const handleClose = () => setOpen(false);
 
+    const handleSignIn = () => {
+        console.log("sign in");
+    };
+
     const setFixed = () => {
         if (window.scrollY >= 90) {
             setFix(true);
@@ -102,6 +106,15 @@ const Navbar = () => {
                         >
                             À propos
                         </div>
+                        <div
+                            className="submit-new-ad-mobile"
+                            onClick={() => {
+                                handleClose();
+                                navigate("/ajouter-une-annonce");
+                            }}
+                        >
+                            Déposer une annonce
+                        </div>
                     </div>
                 </Box>
             </Modal>
@@ -156,6 +169,7 @@ const Navbar = () => {
                             onClick={handleOpen}
                         />
                     </div>
+
                     <div
                         className="logo"
                         style={styles.iconColor}
@@ -163,6 +177,15 @@ const Navbar = () => {
                     >
                         OKAD-MARKET
                     </div>
+
+                    <div className="toggle-menu">
+                        <FontAwesomeIcon
+                            icon={faUser}
+                            style={{ color: "#57bf27", fontSize: "20px" }}
+                            onClick={handleSignIn}
+                        />
+                    </div>
+
                     <div className="navbar-buttons">
                         <div className="home" onClick={() => navigate("/")}>
                             Acceuil
