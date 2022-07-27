@@ -2,7 +2,6 @@ import "./single-property.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { FaPhone, FaBed, FaBath, FaArrowsAlt } from "react-icons/fa";
-import { BsX } from "react-icons/bs";
 import { VscLocation } from "react-icons/vsc";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";

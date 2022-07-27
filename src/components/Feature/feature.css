@@ -7,7 +7,29 @@
 }
 
 .proprieties{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.custom-container{
+    display: flex;
+    width:90%;
+}
+
+.custom-item{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev, .slick-next{
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #57bf27 !important;
+}
+
 
 .rec-item-wrapper{
     display: flex !important;

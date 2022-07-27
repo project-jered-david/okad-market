@@ -8,6 +8,8 @@ import AddNewAd from "./pages/AddNewAd";
 import AboutUs from "./pages/AboutUs";
 import SingleProperty from "./pages/SingleProperty";
 import MyAccount from "./pages/MyAccount";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
     return (

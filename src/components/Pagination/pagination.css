@@ -51,9 +51,9 @@ render-item{
 /* On screens that are 680px or less*/
 @media screen and (max-width: 680px){
     .render{
-        margin-left: 35px;
+        margin-left: 45px;
     }
     .render-item{
-        width: 90%;
+        width: 95%;
     }
 }
