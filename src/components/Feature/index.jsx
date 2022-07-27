@@ -9,11 +9,12 @@ const Feature = () => {
         speed: 600,
         slidesToShow: 3,
         slidesToScroll: 3,
-        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 680,
                 settings: {
+                    dots: true,
+                    speed: 600,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
