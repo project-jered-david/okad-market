@@ -64,6 +64,7 @@ const MyAccount = () => {
                         flexGrow: 1,
                         bgcolor: "background.paper",
                         display: "flex",
+                        gap: "20px",
                         height: "auto",
                     }}
                     className="mobile"
