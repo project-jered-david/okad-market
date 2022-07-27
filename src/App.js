@@ -7,6 +7,7 @@ import Annonces from "./pages/Annonces";
 import AddNewAd from "./pages/AddNewAd";
 import AboutUs from "./pages/AboutUs";
 import SingleProperty from "./pages/SingleProperty";
+import MyAccount from "./pages/MyAccount";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     />
                     <Route path="/ajouter-une-annonce" element={<AddNewAd />} />
                     <Route path="/a-propos" element={<AboutUs />} />
+                    <Route path="/mon-compte/:nom" element={<MyAccount />} />
                 </Routes>
                 <Footer />
             </div>

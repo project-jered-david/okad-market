@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "./sign-in.css";
 
 const SignIn = ({ setSignIn, SetSignUp }) => {
+    const navigate = useNavigate();
+    const handleSignIn = () => {
+        setSignIn(false);
+        navigate("/mon-compte/david");
+    };
     return (
         <div className="sign-in-container">
             <div className="sign-in-wrapper">
@@ -25,7 +31,9 @@ const SignIn = ({ setSignIn, SetSignUp }) => {
                         </div>
                     </div>
 
-                    <div className="connect-button">connexion</div>
+                    <div onClick={handleSignIn} className="connect-button">
+                        connexion
+                    </div>
                     <div className="redirect-register">
                         Vous n'avez pas de compte?
                         <span
