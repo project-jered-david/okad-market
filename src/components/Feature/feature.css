@@ -23,7 +23,9 @@
     justify-content: center;
 }
 
-.slick-prev, .slick-next{
+.slick-dots li button:before{
+    font-size: 10px !important;
+    color: #57bf27 !important;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -41,4 +43,11 @@
 }
 .rec-dot_active {
     background: #57bf27 !important;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .custom-container{
+        width:100%;
+    }
 }
