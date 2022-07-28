@@ -206,10 +206,10 @@ const MyAccount = () => {
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                        Propriétés favorites
+                        Propriétés favorites (Bientôt disponible)
                     </TabPanel>
                     <TabPanel value={value} index={2}>
-                        Mes propriétés
+                        Mes propriétés (Bientôt disponible)
                     </TabPanel>
                 </Box>
             </div>
