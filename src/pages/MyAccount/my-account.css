@@ -82,7 +82,8 @@
 }
 
 
-
+.MuiBox-root{
+}
 
 .Mui-selected{
     color:#57bf27 !important;
@@ -96,8 +97,7 @@
         font-size: 20px;
     }
     .my-account .my-account-container-wrapper{
-
-        padding: 20px;
+        padding: 10px;
     }
 
     .mobile{

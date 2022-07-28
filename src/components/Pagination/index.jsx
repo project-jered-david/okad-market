@@ -5,23 +5,33 @@ import { proprieties } from "../../global/fake-proprieties.js";
 import ReactPaginate from "react-paginate";
 import CardProperty from "../../components/CardPropriety";
 import "./pagination.css";
+import CardAccountProperty from "../CardAccountProperty/index.jsx";
 
 const items = proprieties;
 
-function Items({ currentItems }) {
+function Items({ currentItems, rowDirection }) {
     return (
-        <div className="render">
+        <div className={rowDirection ? "render-row" : "render"}>
             {currentItems &&
                 currentItems.map((item) => (
-                    <div className="render-item" key={item.id}>
-                        <CardProperty propriety={item} />
+                    <div
+                        className={
+                            rowDirection ? "render-item-row" : "render-item"
+                        }
+                        key={item.id}
+                    >
+                        {rowDirection ? (
+                            <CardAccountProperty propriety={item} />
+                        ) : (
+                            <CardProperty propriety={item} />
+                        )}
                     </div>
                 ))}
         </div>
     );
 }
 
-const Pagination = ({ itemsPerPage }) => {
+const Pagination = ({ itemsPerPage, rowDirection }) => {
     // We start with an empty list of items.
     const [currentItems, setCurrentItems] = useState(null);
     const [pageCount, setPageCount] = useState(0);
@@ -46,7 +56,7 @@ const Pagination = ({ itemsPerPage }) => {
 
     return (
         <>
-            <Items currentItems={currentItems} />
+            <Items currentItems={currentItems} rowDirection={rowDirection} />
             <ReactPaginate
                 containerClassName="pagination"
                 previousClassName="previous"

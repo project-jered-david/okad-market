@@ -3,9 +3,22 @@
     flex-wrap: wrap;
     padding: 10px;
 }
+
 .render-item{
     flex: 1 1;
     margin: 10px;
+}
+
+.render-row{
+    display: flex;
+    flex-direction: column;  
+    padding: 10px;
+}
+
+.render-item-row{
+
+    flex: 1;
+    display: flex;
 }
 
 
@@ -67,5 +80,14 @@
         flex-direction: column;
     }
     .render-item{
+    }
+
+    .render-row{
+        padding: 0px;
+    }
+
+    .render-item-row{
+
+       
     }
 }

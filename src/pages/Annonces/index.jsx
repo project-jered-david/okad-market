@@ -43,7 +43,7 @@ const Annonces = () => {
                     </div>
                 </div>
                 <div className="right-side">
-                    <Pagination itemsPerPage={4} />
+                    <Pagination itemsPerPage={4} rowDirection={false} />
                 </div>
             </div>
         </div>

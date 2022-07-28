@@ -209,7 +209,7 @@ const MyAccount = () => {
                         Propriétés favorites (Bientôt disponible)
                     </TabPanel>
                     <TabPanel style={{ flex: 2 }} value={value} index={2}>
-                        <Pagination itemsPerPage={4} />
+                        <Pagination itemsPerPage={4} rowDirection={true} />
                     </TabPanel>
                 </Box>
             </div>
