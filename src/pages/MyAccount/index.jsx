@@ -14,7 +14,7 @@ import {
 import Box from "@mui/material/Box";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Pagination from "../../components/Pagination";
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -208,8 +208,8 @@ const MyAccount = () => {
                     <TabPanel value={value} index={1}>
                         Propriétés favorites (Bientôt disponible)
                     </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        Mes propriétés (Bientôt disponible)
+                    <TabPanel style={{ flex: 2 }} value={value} index={2}>
+                        <Pagination itemsPerPage={4} />
                     </TabPanel>
                 </Box>
             </div>

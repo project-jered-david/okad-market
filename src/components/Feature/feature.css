@@ -14,13 +14,15 @@
 
 .custom-container{
     display: flex;
-    width:90%;
+    width:95%;
 }
 
 .custom-item{
     display: flex !important;
     align-items: center;
-    justify-content: center;
+    width:100%;
+    justify-content: space-around;
+    
 }
 
 .slick-dots li button:before{
@@ -48,6 +50,6 @@
 /* On screens that are 680px or less*/
 @media screen and (max-width: 680px){
     .custom-container{
-        width:100%;
+        width:90%;
     }
 }

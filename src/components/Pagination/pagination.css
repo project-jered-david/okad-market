@@ -1,14 +1,11 @@
 .render{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 60px;
-    gap: 40px;
-
+    padding: 10px;
 }
-render-item{
-    width: 50%;
+.render-item{
+    flex: 1 1;
+    margin: 10px;
 }
 
 
@@ -66,9 +63,9 @@ render-item{
 /* On screens that are 680px or less*/
 @media screen and (max-width: 680px){
     .render{
-        margin-left: 35px;
+        flex-wrap:unset;
+        flex-direction: column;
     }
     .render-item{
-        width: 100%;
     }
 }
