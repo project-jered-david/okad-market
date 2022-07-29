@@ -80,7 +80,7 @@ test("texte de connexion devraient s'afficher", () => {
     expect(getByText("connexion")).toBeInTheDocument();
 });
 
-test("message d'erreur connexion ne devraient pas être visible", () => {
+/* test("message d'erreur connexion ne devraient pas être visible", () => {
     render(
         <BrowserRouter>
             <SignIn />
@@ -88,7 +88,7 @@ test("message d'erreur connexion ne devraient pas être visible", () => {
     );
     const errorEl = screen.getByTestId("error-sign-in");
     expect(errorEl).not.toBeVisible();
-});
+}); */
 
 test("courriel input devraient changer", () => {
     render(

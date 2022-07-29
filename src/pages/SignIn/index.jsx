@@ -39,12 +39,12 @@ const SignIn = ({ setSignIn, SetSignUp }) => {
                         </div>
                     </div>
 
-                    <span
+                    {/* <span
                         style={{ visibility: error ? "visible" : "hidden" }}
                         data-testid="error-sign-in"
                     >
                         erreur
-                    </span>
+                    </span> */}
 
                     <button
                         disabled={!courriel || !password}
