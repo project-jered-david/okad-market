@@ -1,0 +1,114 @@
+.my-account{
+}
+
+.my-account .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+.my-account .my-account-container-wrapper{
+    display: flex;
+    padding: 40px;
+}
+.add-ad,
+.log-out {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background: #e2e2e2;
+    gap: 17px;
+    padding: 20px;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.details-profil{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.details-profil .details-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.details-profil .form-profil{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.details-profil .form-profil .item{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.details-profil .form-profil .item .item-label,
+.details-profil .form-profil .item .item-input{
+    display: flex;
+   flex:1;
+}
+
+.details-profil .form-profil .item .item-label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.details-profil .form-profil .item .item-input input{
+    flex:1;
+    padding: 10px;
+    border: .5px solid #e2e2e2;
+    font-size: 16px;
+}
+
+.details-profil .form-profil .item .item-input input:focus{
+    outline: none;
+}
+
+.details-profil .send-change{
+    display: flex;
+    background:#57bf27;
+    padding: 10px;
+    width:fit-content;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.MuiBox-root{
+}
+
+.Mui-selected{
+    color:#57bf27 !important;
+}
+
+
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .my-account .title{
+        font-size: 20px;
+    }
+    .my-account .my-account-container-wrapper{
+        padding: 10px;
+    }
+
+    .mobile{
+        flex-direction: column !important;
+    }
+
+    .details-profil .send-change{
+        font-size: 16px;
+        width:auto;
+        flex:1 !important;
+        align-items: center;
+        justify-content: center;
+    }
+}

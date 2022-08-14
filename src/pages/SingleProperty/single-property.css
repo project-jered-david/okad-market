@@ -10,6 +10,15 @@
     color: #fff;
 }
 
+.MuiPaper-root{ 
+    background: #57bf27 !important;
+    color: #fff !important;
+}
+
+.MuiPaper-root:before {
+    background-color: transparent !important;
+}
+
 .single-property .carousel-container{
     padding: 40px;
     height: auto;
@@ -229,6 +238,11 @@
 
     .single-property .property-details .left-side .property-infos .property-title {
         font-size: 20px;
+    }
+
+    .single-property .property-details .right-side .contact-us-container .our-info .form-container .item textarea,
+    .single-property .property-details .right-side .contact-us-container .our-info .form-container .item input{
+        font-size: 16px;
     }
     
     .single-property .property-details .left-side .property-infos .property-location,

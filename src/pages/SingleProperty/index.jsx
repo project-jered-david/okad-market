@@ -2,7 +2,6 @@ import "./single-property.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { FaPhone, FaBed, FaBath, FaArrowsAlt } from "react-icons/fa";
-import { BsX } from "react-icons/bs";
 import { VscLocation } from "react-icons/vsc";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -11,6 +10,8 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const fakeImage = [
@@ -24,10 +25,11 @@ const style = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "90%",
-    height: "80%",
+    width: "80%",
+    height: "90%",
     bgcolor: "background.paper",
     boxShadow: 24,
+    outline: "none",
     p: 4,
 };
 
@@ -53,7 +55,15 @@ const SingleProperty = () => {
                             fontWeight: "bold",
                         }}
                     >
-                        <BsX />
+                        <FontAwesomeIcon
+                            icon={faX}
+                            className="icon-close-button"
+                            style={{
+                                fontWeight: "bold",
+                                fontSize: "25px",
+                                color: "#57bf27",
+                            }}
+                        />
                     </div>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         <img

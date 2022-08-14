@@ -3,6 +3,8 @@
     margin-bottom: 40px;
     transition: all .5s ease-in-out;
     position: relative;
+    width: 420px;
+    
 }
 
 .card-propriety .type{
@@ -27,16 +29,12 @@
     padding: 5px;
     border-radius: 50px;
 }
-.card-propriety:hover{
-    -webkit-box-shadow: 0px 0px 20px 0px gray; 
-    box-shadow: 0px 0px 20px 0px gray;
-}
 
 .image-container{
 }
 
 .card-propriety .image-container .image {
-    width: 400px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
@@ -69,7 +67,8 @@
 .card-propriety .details .propriety-title{
     width: fit-content;
     transition: all .5s ease-in-out;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 17px;
     font-weight: 600;
 }
@@ -120,8 +119,11 @@
 
 /* On screens that are 680px or less*/
 @media screen and (max-width: 680px){
+    .card-propriety{
+        width: 100%;
+    }
     .card-propriety .image-container{
-        width: 270px;
+        width:100%;
     }
     .card-propriety .type{
         font-size: 12px;

@@ -113,6 +113,9 @@ border-bottom-right-radius: 5px;
         flex-direction: column;
         gap: 5px;
     }
+    .header .bottom .search-filter-container input{
+        font-size: 17px;
+    }
     .header .bottom .buttons .rent-button,
     .header .bottom .buttons .buy-button {
         font-size: 17px;
