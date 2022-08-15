@@ -16,7 +16,14 @@ const CardPropriety = ({ propriety }) => {
             <div className="type">
                 {propriety.type === "LOUER" ? "À LOUER" : "À VENDRE"}
             </div>
-            <div className="image-container">
+            <div
+                className="image-container"
+                onClick={() =>
+                    navigate("/details-annonce", {
+                        state: propriety.id,
+                    })
+                }
+            >
                 <img className="image" src={propriety.image} alt="alt" />
                 <div className="like">
                     <FaHeart />
@@ -24,16 +31,18 @@ const CardPropriety = ({ propriety }) => {
             </div>
             <div className="price">{propriety.price} CFA/mois</div>
             <div className="details">
-                <div
-                    onClick={() =>
-                        navigate("/details-annonce", {
-                            state: propriety.id,
-                        })
-                    }
-                    className="propriety-title"
-                    style={{ cursor: "pointer" }}
-                >
-                    {propriety.title}
+                <div className="propriety-title" style={{ cursor: "pointer" }}>
+                    <div
+                        onClick={() =>
+                            navigate("/details-annonce", {
+                                state: propriety.id,
+                            })
+                        }
+                    >
+                        {propriety.title}
+                    </div>
+
+                    <div className="book-button">Réserver</div>
                 </div>
                 <div className="propriety-location">
                     <FontAwesomeIcon

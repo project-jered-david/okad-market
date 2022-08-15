@@ -31,6 +31,7 @@
 }
 
 .image-container{
+    cursor: pointer;
 }
 
 .card-propriety .image-container .image {
@@ -69,6 +70,10 @@
     transition: all .5s ease-in-out;
     margin-bottom: 20px;
     margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     font-size: 17px;
     font-weight: 600;
 }
@@ -76,6 +81,15 @@
 .card-propriety .details .propriety-title:hover{
     color: #57bf27;
 }
+
+.card-propriety .details .propriety-title .book-button{
+    color: #fff;
+    background:#57bf27;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
 .card-propriety .details .propriety-location{
     margin-bottom: 10px;
     display: flex;
