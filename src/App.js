@@ -10,6 +10,7 @@ import SingleProperty from "./pages/SingleProperty";
 import MyAccount from "./pages/MyAccount";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BookOptions from "./pages/BookOptions";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/annonces" element={<Annonces />} />
                 <Route path="/details-annonce" element={<SingleProperty />} />
+                <Route path="/reservation" element={<BookOptions />} />
                 <Route path="/ajouter-une-annonce" element={<AddNewAd />} />
                 <Route path="/a-propos" element={<AboutUs />} />
                 <Route path="/mon-compte/:nom" element={<MyAccount />} />

@@ -1,0 +1,53 @@
+.book-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-options .title{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px;
+    background: #57bf27;
+    color: #fff;
+}
+
+
+
+.book-options .important-message{
+    background: rgb(249, 203, 138) !important;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.book-options .call-us-for-booking{
+    background-color: #57bf27;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 1;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* On screens that are 680px or less*/
+@media screen and (max-width: 680px){
+    .book-options .title,
+    .book-options .call-us-for-booking{
+        font-size: 20px;
+    }
+
+    .book-options .important-message{
+    flex-direction: column;
+    font-size: 18px;
+    }
+/*     .book-options .book-options-wrapper{
+        flex-direction: column;
+    } */
+}

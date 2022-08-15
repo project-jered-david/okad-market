@@ -1,6 +1,7 @@
 export const proprieties = [
     {
         id: 1,
+        number: 1,
         title: "Rank",
         type: "LOUER",
         price: 464344.58,
@@ -14,6 +15,7 @@ export const proprieties = [
     },
     {
         id: 2,
+        number: 2,
         title: "Zathin",
         type: "LOUER",
         price: 358614.52,
@@ -27,6 +29,7 @@ export const proprieties = [
     },
     {
         id: 3,
+        number: 3,
         title: "Tempsoft",
         type: "VENDRE",
         price: 235170.75,
@@ -40,6 +43,7 @@ export const proprieties = [
     },
     {
         id: 4,
+        number: 4,
         title: "Kanlam",
         type: "LOUER",
         price: 233746.77,
@@ -53,6 +57,7 @@ export const proprieties = [
     },
     {
         id: 5,
+        number: 5,
         title: "Y-Solowarm",
         type: "VENDRE",
         price: 322704.91,
@@ -66,6 +71,7 @@ export const proprieties = [
     },
     {
         id: 6,
+        number: 6,
         title: "Y-Solowarm",
         type: "VENDRE",
         price: 322704.91,
@@ -79,6 +85,7 @@ export const proprieties = [
     },
     {
         id: 7,
+        number: 7,
         title: "Y-Solowarm",
         type: "VENDRE",
         price: 322704.91,

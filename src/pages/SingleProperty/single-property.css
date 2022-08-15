@@ -10,12 +10,12 @@
     color: #fff;
 }
 
-.MuiPaper-root{ 
+.single-property .MuiPaper-root{ 
     background: #57bf27 !important;
     color: #fff !important;
 }
 
-.MuiPaper-root:before {
+.single-property .MuiPaper-root:before {
     background-color: transparent !important;
 }
 

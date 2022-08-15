@@ -42,7 +42,16 @@ const CardPropriety = ({ propriety }) => {
                         {propriety.title}
                     </div>
 
-                    <div className="book-button">Réserver</div>
+                    <div
+                        className="book-button"
+                        onClick={() =>
+                            navigate("/reservation", {
+                                state: propriety.number,
+                            })
+                        }
+                    >
+                        Réserver
+                    </div>
                 </div>
                 <div className="propriety-location">
                     <FontAwesomeIcon
