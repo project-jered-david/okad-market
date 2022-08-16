@@ -43,6 +43,7 @@
 .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input {
     padding: 10px;
     flex: 1;
+    border-radius: 5px;
     border: .5px solid #e2e2e2;
 }
 

@@ -6,6 +6,7 @@ const DropDownContainer = styled("div")`
     flex: 1;
     background: #ffffff;
     border: 0.5px solid #e2e2e2;
+    border-radius: 5px;
     padding: 10px;
     position: relative;
     cursor: pointer;
@@ -30,6 +31,7 @@ const DropDownList = styled("ul")`
     margin: 0;
     padding-left: 1em;
     background: #ffffff;
+    border-radius: 5px;
     border: 0.5px solid #e2e2e2;
     min-height: 90px;
     max-height: 180px;

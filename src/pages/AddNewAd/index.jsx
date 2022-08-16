@@ -165,7 +165,7 @@ const AddNewAd = () => {
                         </div>
                         <div className="info">
                             <div className="label-info">Téléphone</div>
-                            <input type="number" placeholder="Prix..." />
+                            <input type="number" placeholder="Téléphone..." />
                         </div>
                         <div className="info">
                             <div className="label-info">Courriel</div>

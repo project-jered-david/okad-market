@@ -54,6 +54,8 @@
 
 .header .bottom .search-filter-container{
     display: flex;
+    justify-content: space-around;
+    gap: 10px;
     width: 80%;
 }
 
@@ -68,8 +70,7 @@
 }
 
 .header .bottom .search-filter-container .border{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 
 .header .bottom .search-filter-container .search-item:focus{
@@ -88,8 +89,7 @@
 }
 
 .header .bottom .search-filter-container .search-button-border{
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
+    border-radius: 5px;
 }
 
 .header .bottom .search-filter-container .search-button:hover{
@@ -113,24 +113,17 @@ border-bottom-right-radius: 5px;
         flex-direction: column;
         gap: 5px;
     }
-    .header .bottom .search-filter-container input{
-        font-size: 17px;
+    .input{
+        border-radius: 5px !important;
     }
     .header .bottom .buttons .rent-button,
     .header .bottom .buttons .buy-button {
         font-size: 17px;
     }
-    .header .bottom .search-filter-container .border{
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-    .header .bottom .search-filter-container .search-button-border{
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
+
     .header .bottom .search-filter-container .search-button{
         padding: 10px;
-        border-radius: 3px;
+        border-radius: 5px;
         font-size: 17px;
     }
     
