@@ -16,15 +16,17 @@ const CardPropriety = ({ propriety }) => {
             <div className="type">
                 {propriety.type === "LOUER" ? "À LOUER" : "À VENDRE"}
             </div>
-            <div
-                className="image-container"
-                onClick={() =>
-                    navigate("/details-annonce", {
-                        state: propriety.id,
-                    })
-                }
-            >
-                <img className="image" src={propriety.image} alt="alt" />
+            <div className="image-container">
+                <img
+                    onClick={() =>
+                        navigate("/details-annonce", {
+                            state: propriety.id,
+                        })
+                    }
+                    className="image"
+                    src={propriety.image}
+                    alt="alt"
+                />
                 <div className="like">
                     <FaHeart />
                 </div>
