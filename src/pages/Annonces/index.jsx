@@ -3,13 +3,21 @@ import CustomDropDown from "../../components/CustomDropDown";
 import Pagination from "../../components/Pagination";
 import "./annonces.css";
 
-const propertyStatus = ["Excellent", "Bon", "Moyen", "Usagé"];
-const propertyType = ["Maison", "Boutique", "Magasin", "Appartement", "Hôtel"];
-const propertyCity = ["Ville-1", "Ville-2", "Ville-3"];
-const propertyPrice = ["Prix croissant", "Prix décroissant"];
+const propertyType = [
+    "Type",
+    "Maison",
+    "Boutique",
+    "Magasin",
+    "Appartement",
+    "Hôtel",
+    "Bureau",
+    "Commercial",
+    "Autres",
+];
+const propertyCity = ["Villes", "Ville-1", "Ville-2", "Ville-3"];
+const propertyPrice = ["Prix", "Prix croissant", "Prix décroissant"];
 const propertyCategory = ["Catégorie", "Location", "Vente"];
 const Annonces = () => {
-    const [etatPropriete, setEtatPropriete] = useState(propertyStatus[0]);
     const [typePropriete, setTypePropriete] = useState(propertyType[0]);
     const [villePropriete, setVillePropriete] = useState(propertyCity[0]);
     const [prixPropriete, setPrixPropriete] = useState(propertyPrice[0]);
@@ -23,8 +31,8 @@ const Annonces = () => {
                         <div className="advanced-search">Recherche avancée</div>
                         <div className="search-filters">
                             <CustomDropDown
-                                options={propertyStatus}
-                                setValue={setEtatPropriete}
+                                options={propertyCategory}
+                                setValue={setPrixCategory}
                             />
                             <CustomDropDown
                                 options={propertyCity}
@@ -39,10 +47,6 @@ const Annonces = () => {
                             <CustomDropDown
                                 options={propertyPrice}
                                 setValue={setPrixPropriete}
-                            />
-                            <CustomDropDown
-                                options={propertyCategory}
-                                setValue={setPrixCategory}
                             />
                         </div>
                         <div className="search-submit">Rechercher</div>

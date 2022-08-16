@@ -3,8 +3,18 @@ import CustomDropDown from "../CustomDropDown";
 import { useState } from "react";
 import "./header.css";
 
-const propertyCity = ["Ville-1", "Ville-2", "Ville-3"];
-const propertyType = ["Maison", "Boutique", "Magasin", "Appartement", "Hôtel"];
+const propertyCity = ["Villes", "Ville-1", "Ville-2", "Ville-3"];
+const propertyType = [
+    "Type",
+    "Maison",
+    "Boutique",
+    "Magasin",
+    "Appartement",
+    "Hôtel",
+    "Bureau",
+    "Commercial",
+    "Autres",
+];
 
 const Header = () => {
     const navigate = useNavigate();
