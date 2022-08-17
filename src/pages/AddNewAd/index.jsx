@@ -25,7 +25,6 @@ const AddNewAd = () => {
     const onSubmitNewAd = (e) => {
         e.preventDefault();
     };
-    console.log(etatPropriete, typePropriete, villePropriete);
     return (
         <div className="add-new-ad">
             <div className="title">Ajouter votre annonce</div>

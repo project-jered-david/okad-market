@@ -4,7 +4,6 @@ import { FaExclamationTriangle } from "react-icons/fa";
 
 const BookOptions = () => {
     const { state: propertyNumber } = useLocation();
-    console.log(propertyNumber);
 
     return (
         <div className="book-options">

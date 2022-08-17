@@ -29,8 +29,8 @@ const Feature = () => {
             <div className="proprieties">
                 <Slider className="custom-container" {...settings}>
                     {proprieties.map((item) => (
-                        <div className="custom-item">
-                            <CardPropriety key={item.id} propriety={item} />
+                        <div key={item.id} className="custom-item">
+                            <CardPropriety propriety={item} />
                         </div>
                     ))}
                 </Slider>

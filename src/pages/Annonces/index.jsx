@@ -26,7 +26,6 @@ const Annonces = () => {
     const [categoriePropriete, setCategoriePropiete] = useState(
         propertyCategory[0]
     );
-    console.log(categoriePropriete);
     return (
         <div className="annonces">
             <div className="title">Annonces</div>

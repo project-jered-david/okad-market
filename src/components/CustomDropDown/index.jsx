@@ -10,6 +10,10 @@ const DropDownContainer = styled("div")`
     padding: 10px;
     position: relative;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        border: 0.5px solid #57bf27;
+    }
 `;
 
 const DropDownHeader = styled("div")`
@@ -70,10 +74,10 @@ export default function CustomDropDown({ options, defaultOption, setValue }) {
             {isOpen && (
                 <DropDownListContainer>
                     <DropDownList>
-                        {options.map((option) => (
+                        {options.map((option, index) => (
                             <ListItem
                                 onClick={onOptionClicked(option)}
-                                key={Math.random()}
+                                key={index}
                             >
                                 {option}
                             </ListItem>

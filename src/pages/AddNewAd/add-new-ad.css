@@ -45,11 +45,16 @@
     flex: 1;
     border-radius: 5px;
     border: .5px solid #e2e2e2;
+    transition: all .5s ease-in-out;
 }
 
 .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info select:focus,
 .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input:focus{
     outline:none;
+}
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info select:hover,
+.add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input:hover{
+    border: .5px solid #57bf27;
 }
 
 .add-new-ad .new-ad-form-container .new-ad-form-container-wrapper .basic-infos .info input[type=file]{
