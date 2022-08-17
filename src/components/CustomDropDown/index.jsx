@@ -47,9 +47,11 @@ const ListItem = styled("li")`
     margin-bottom: 0.8em;
 `;
 
-export default function CustomDropDown({ options, setValue }) {
+export default function CustomDropDown({ options, defaultOption, setValue }) {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(options[0]);
+    const [selectedOption, setSelectedOption] = useState(
+        defaultOption ? defaultOption : options[0]
+    );
 
     const toggling = () => setIsOpen(!isOpen);
 

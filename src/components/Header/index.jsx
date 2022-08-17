@@ -40,8 +40,26 @@ const Header = () => {
             </div>
             <div className="bottom">
                 <div className="buttons">
-                    <div className="rent-button">LOUER</div>
-                    <div className="buy-button">ACHETER</div>
+                    <div
+                        className="rent-button"
+                        onClick={() =>
+                            navigate("/annonces", {
+                                state: "Location",
+                            })
+                        }
+                    >
+                        LOUER
+                    </div>
+                    <div
+                        className="buy-button"
+                        onClick={() =>
+                            navigate("/annonces", {
+                                state: "Vente",
+                            })
+                        }
+                    >
+                        ACHETER
+                    </div>
                 </div>
                 <div className="search-filter-container">
                     <input

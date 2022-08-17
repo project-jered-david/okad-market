@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import CustomDropDown from "../../components/CustomDropDown";
 import Pagination from "../../components/Pagination";
 import "./annonces.css";
@@ -18,10 +19,14 @@ const propertyCity = ["Villes", "Ville-1", "Ville-2", "Ville-3"];
 const propertyPrice = ["Prix", "Prix croissant", "Prix décroissant"];
 const propertyCategory = ["Catégorie", "Location", "Vente"];
 const Annonces = () => {
+    const { state: category } = useLocation();
     const [typePropriete, setTypePropriete] = useState(propertyType[0]);
     const [villePropriete, setVillePropriete] = useState(propertyCity[0]);
     const [prixPropriete, setPrixPropriete] = useState(propertyPrice[0]);
-    const [categoriePropriete, setPrixCategory] = useState(propertyCategory[0]);
+    const [categoriePropriete, setCategoriePropiete] = useState(
+        propertyCategory[0]
+    );
+    console.log(categoriePropriete);
     return (
         <div className="annonces">
             <div className="title">Annonces</div>
@@ -32,7 +37,8 @@ const Annonces = () => {
                         <div className="search-filters">
                             <CustomDropDown
                                 options={propertyCategory}
-                                setValue={setPrixCategory}
+                                defaultOption={category}
+                                setValue={setCategoriePropiete}
                             />
                             <CustomDropDown
                                 options={propertyCity}
